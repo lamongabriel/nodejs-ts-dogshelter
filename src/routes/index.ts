@@ -9,4 +9,6 @@ router.get('/dogs', MainController.dogs);
 router.get('/cats', MainController.cats);
 router.get('/fishes', MainController.fishes);
 
+router.get('/search', SearchController.search);
+
 export default router;

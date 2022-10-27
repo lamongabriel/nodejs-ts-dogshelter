@@ -14,15 +14,15 @@
     <div class="container">
       <a href="/">PetDevShop</a>
       <form method="GET" action="/search">
-        <input type="search" name="q" placeholder="Search for a breed" />
+        <input type="search" name="q" placeholder="Search for a breed" value="<%= locals.searchParam ? searchParam : '' %>" />
       </form>
     </div>
   </header>
   <nav>
     <ul>
-      <li class="active"><a href="/">All</a></li>
-      <li class=""><a href="/dogs">Dogs</a></li>
-      <li class=""><a href="/cats">Cats</a></li>
-      <li class=""><a href="/fishes">Fishes</a></li>
+      <li class="<%=locals.allActive%>"><a href="/">All</a></li>
+      <li class="<%=locals.dogsActive%>"><a href="/dogs">Dogs</a></li>
+      <li class="<%=locals.catsActive%>"><a href="/cats">Cats</a></li>
+      <li class="<%=locals.fishesActive%>"><a href="/fishes">Fishes</a></li>
     </ul>
   </nav>

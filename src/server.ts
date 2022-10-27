@@ -17,7 +17,7 @@ server.use(mainRoutes);
 
 // Could not find any route, then 404 page.
 server.use((req, res) => {
-	res.send('404');
+	res.render('pages/404.ejs');
 });
 
 // Server runs on .env PORT variable
